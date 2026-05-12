@@ -130,14 +130,14 @@ margin: 5px;
 }
 
 .roda {
-  display: flex;           /* Transforma a div em flexbox */
-  justify-content: center;  /* Centraliza a imagem horizontalmente */
-  align-items: center;      /* Garante alinhamento vertical se houver altura */
-  width: 100%;              /* Ocupa a largura toda para poder calcular o centro */
-  margin: 20px 0;           /* Adiciona um espaço em cima e embaixo (opcional) */
+  display: none;           
+  justify-content: center;  
+  align-items: center;      
+  width: 100%;              
+  margin: 20px 0;           
 }
 
 .roda img {
-  max-width: 28%;          /* Impede que a imagem "estoure" o tamanho da tela */
-  height: auto;             /* Mantém a proporção da imagem */
+  max-width: 28%;         
+  height: auto;           
 }
