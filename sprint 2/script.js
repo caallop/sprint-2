@@ -7,6 +7,7 @@ const acessibilidade = document.querySelector('.acessibilidade')
 const roda = document.querySelector('.roda')
 
 const flash = document.querySelector('.flash')
+const flashImg = document.querySelector('.flash img')
 const timer = document.querySelector('.timer')
 const foto = document.querySelector('.foto')
 const galeria = document.querySelector('.galeria')
@@ -63,12 +64,12 @@ flash.addEventListener('click', () => {
     document.body.classList.toggle('flashAtivo')
 
     if(document.body.classList.contains('flashAtivo')){
-
+        flashImg.src = "./img/flash.png"
         alert('Flash ativado!')
 
     }
     else{
-
+        flashImg.src = "./img/sem_flash.png"
         alert('Flash desativado!')
 
     }
@@ -119,7 +120,7 @@ function slideshow(){
         indice = 0
     }
 
-    const imagemGaleria = document.querySelector('img/galeria.png')
+    const imagemGaleria = document.querySelector('.galeria')
 
     if(imagemGaleria){
         imagemGaleria.src = imagens[indice]

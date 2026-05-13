@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.page {
+.pagina {
     background-image: url(../img/background.jpg);
     background-position: center;
     background-size: cover;
@@ -35,13 +35,6 @@ button {
     align-items: center;
 }
 
-.fundo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50vh;
-    padding: 20px;
-}
 
 footer {
     background-color: rgba(0, 0, 0, 0.5);
