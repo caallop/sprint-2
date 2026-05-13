@@ -10,3 +10,14 @@ const flash = document.querySelector('.flash')
 const timer = document.querySelector('.timer')
 const foto = document.querySelector('.foto')
 const galeria = document.querySelector('.galeria')
+
+// Início
+
+info.style.display = 'none'
+roda.style.display = 'none'
+
+const nomeUsuario = prompt('Digite seu nome:')
+
+if(nomeUsuario){
+    alert(`Bem-vindo(a), ${nomeUsuario}!`)
+}
