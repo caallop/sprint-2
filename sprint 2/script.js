@@ -34,3 +34,20 @@ infoBotao.addEventListener('click', () => {
     }
 
 })
+
+// Acessibilidade
+
+acessibilidade.addEventListener('click', () => {
+
+    if(roda.style.display === 'none'){
+        roda.style.display = 'flex'
+
+        alert('Modo acessibilidade ativado!')
+
+        detectarSom()
+    }
+    else{
+        roda.style.display = 'none'
+    }
+
+})
