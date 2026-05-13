@@ -73,3 +73,17 @@ timer.addEventListener('click', () => {
     }, 3000)
 
 })
+
+// Foto
+
+foto.addEventListener('click', () => {
+    tirarFoto()
+})
+
+function tirarFoto(){
+
+    alert('📸 Foto tirada!')
+
+    criarNotificacao('Foto salva na galeria')
+
+}
