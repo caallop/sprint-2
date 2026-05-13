@@ -87,3 +87,31 @@ function tirarFoto(){
     criarNotificacao('Foto salva na galeria')
 
 }
+
+// Galeria
+
+const imagens = [
+    './img/foto1.jpg',
+    './img/foto2.jpg',
+    './img/foto3.jpg'
+]
+
+let indice = 0
+
+function slideshow(){
+
+    indice++
+
+    if(indice >= imagens.length){
+        indice = 0
+    }
+
+    const imagemGaleria = document.querySelector('.galeria img')
+
+    if(imagemGaleria){
+        imagemGaleria.src = imagens[indice]
+    }
+
+}
+
+setInterval(slideshow, 4000)
