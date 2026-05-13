@@ -21,3 +21,16 @@ const nomeUsuario = prompt('Digite seu nome:')
 if(nomeUsuario){
     alert(`Bem-vindo(a), ${nomeUsuario}!`)
 }
+
+// Botão de info
+
+infoBotao.addEventListener('click', () => {
+
+    if(info.style.display === 'none'){
+        info.style.display = 'flex'
+    }
+    else{
+        info.style.display = 'none'
+    }
+
+})
