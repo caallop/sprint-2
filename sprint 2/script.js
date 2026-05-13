@@ -115,3 +115,20 @@ function slideshow(){
 }
 
 setInterval(slideshow, 4000)
+
+// Detectar som
+
+const sons = [
+    'Sirene',
+    'Campainha',
+    'Bebê chorando',
+    'Buzina'
+]
+
+function detectarSom(){
+
+    const som = sons[Math.floor(Math.random() * sons.length)]
+
+    mostrarAlertaVisual(som)
+
+}
