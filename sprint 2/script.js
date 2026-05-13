@@ -132,3 +132,41 @@ function detectarSom(){
     mostrarAlertaVisual(som)
 
 }
+
+// Roda 
+
+function mostrarAlertaVisual(som){
+
+    const alerta = document.createElement('div')
+
+    alerta.classList.add('alertaVisual')
+
+    alerta.innerText = `⚠ Som detectado: ${som}`
+
+    document.body.appendChild(alerta)
+
+    if(som === 'Sirene'){
+        document.body.style.backgroundColor = '#ff4d4d'
+    }
+
+    if(som === 'Campainha'){
+        document.body.style.backgroundColor = '#ffd54f'
+    }
+
+    if(som === 'Bebê chorando'){
+        document.body.style.backgroundColor = '#64b5f6'
+    }
+
+    if(som === 'Buzina'){
+        document.body.style.backgroundColor = '#81c784'
+    }
+
+    setTimeout(() => {
+
+        alerta.remove()
+
+        document.body.style.backgroundColor = ''
+
+    }, 3000)
+
+}
