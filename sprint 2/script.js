@@ -51,3 +51,13 @@ acessibilidade.addEventListener('click', () => {
     }
 
 })
+
+// Flash
+
+flash.addEventListener('click', () => {
+
+    document.body.classList.toggle('flashAtivo')
+
+    alert('Flash ativado!')
+
+})
