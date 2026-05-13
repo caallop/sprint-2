@@ -16,10 +16,14 @@ const galeria = document.querySelector('.galeria')
 info.style.display = 'none'
 roda.style.display = 'none'
 
-const nomeUsuario = prompt('Digite seu nome:')
+const nomeUsuario = prompt('Digite seu nome: ')
+const senha = prompt('Digite sua senha: ')
 
-if(nomeUsuario){
+if(nomeUsuario === 'Usuário' && senha === '1234'){
     alert(`Bem-vindo(a), ${nomeUsuario}!`)
+} else {
+    alert(`Entrada inválida!`)
+    location.reload()
 }
 
 // Botão de info
@@ -58,7 +62,16 @@ flash.addEventListener('click', () => {
 
     document.body.classList.toggle('flashAtivo')
 
-    alert('Flash ativado!')
+    if(document.body.classList.contains('flashAtivo')){
+
+        alert('Flash ativado!')
+
+    }
+    else{
+
+        alert('Flash desativado!')
+
+    }
 
 })
 
@@ -82,7 +95,7 @@ foto.addEventListener('click', () => {
 
 function tirarFoto(){
 
-    alert('📸 Foto tirada!')
+    alert('Foto tirada!')
 
     criarNotificacao('Foto salva na galeria')
 
@@ -106,7 +119,7 @@ function slideshow(){
         indice = 0
     }
 
-    const imagemGaleria = document.querySelector('.galeria img')
+    const imagemGaleria = document.querySelector('img/galeria.png')
 
     if(imagemGaleria){
         imagemGaleria.src = imagens[indice]
@@ -141,7 +154,7 @@ function mostrarAlertaVisual(som){
 
     alerta.classList.add('alertaVisual')
 
-    alerta.innerText = `⚠ Som detectado: ${som}`
+    alerta.innerText = `Som detectado: ${som}`
 
     document.body.appendChild(alerta)
 
