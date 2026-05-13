@@ -170,3 +170,21 @@ function mostrarAlertaVisual(som){
     }, 3000)
 
 }
+
+// Histórico
+
+function criarNotificacao(texto){
+
+    const notificacao = document.createElement('div')
+
+    notificacao.classList.add('notificacao')
+
+    notificacao.innerText = texto
+
+    document.body.appendChild(notificacao)
+
+    setTimeout(() => {
+        notificacao.remove()
+    }, 3000)
+
+}
