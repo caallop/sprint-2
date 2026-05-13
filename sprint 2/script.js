@@ -61,3 +61,15 @@ flash.addEventListener('click', () => {
     alert('Flash ativado!')
 
 })
+
+// Timer
+
+timer.addEventListener('click', () => {
+
+    alert('Foto será tirada em 3 segundos!')
+
+    setTimeout(() => {
+        tirarFoto()
+    }, 3000)
+
+})
